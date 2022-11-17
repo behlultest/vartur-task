@@ -31,7 +31,7 @@ Dockerize Start
 
 
     ./vendor/bin/sail up
-	/vendor/bin/sail php artisan key:generate
+	./vendor/bin/sail php artisan key:generate
 	./vendor/bin/sail php artisan storage:link
 	./vendor/bin/sail php artisan migrate --seed
 
