@@ -34,6 +34,8 @@ Dockerize Start
 	./vendor/bin/sail php artisan key:generate
 	./vendor/bin/sail php artisan storage:link
 	./vendor/bin/sail php artisan migrate --seed
+    ./vendor/bin/sail npm install
+    ./vendor/bin/sail npm run dev
 
 **or** start normally
 
@@ -46,6 +48,8 @@ php artisan key:generate
 php artisan migrate --seed
 php artisan storage:link
 php artisan serve
+npm install
+npm run dev
 ```
 
 
