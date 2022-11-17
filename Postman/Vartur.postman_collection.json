@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "287b1b4b-ae19-4144-b558-e6e5c46356b1",
+		"name": "Vartur",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13525879"
+	},
+	"item": [
+		{
+			"name": "Product | Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"type": "file",
+							"src": "/Users/behlulbozal/Desktop/Ekran Resmi 2022-11-17 03.30.16.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/products",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product | Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"type": "file",
+							"src": "/Users/behlulbozal/Desktop/Ekran Resmi 2022-11-17 03.30.16.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/products",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product | Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "demo",
+							"type": "text"
+						},
+						{
+							"key": "picture",
+							"type": "file",
+							"src": "/Users/behlulbozal/Desktop/Ekran Resmi 2022-11-17 03.30.16.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}/products",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product | Show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{api_url}}/products/3",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api_url",
+			"value": "http://localhost/api",
+			"type": "string"
+		}
+	]
+}
